@@ -23,7 +23,6 @@ function cellClickHandler(cellno,rowNo,colNo){
        var xWinnerCol = checkColumnConnect();
        var xWinnerDiag = checkDiagConnect();
        if(xWinnerRow || xWinnerCol || xWinnerDiag){
-           console.log("Player1 is winner");
            var newDiv = document.createElement("div");
            newDiv.className = "result-container";
            newDiv.onclick = clearAll;
